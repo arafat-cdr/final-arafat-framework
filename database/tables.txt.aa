@@ -1,0 +1,58 @@
+1)users
+   1) id-->primary
+   2) first_name-->varchar:255
+   3) last_name-->varchar_255
+   4) nick_name-->varchar_255
+   5) email-->varchar_255
+   6) password-->varchar_255
+   7) phone-->varchar_255
+   8) img-->varchar_255
+   9) address-->text
+   10) dob-->varchar_255
+   11) gender-->varchar_255
+   12) email_verified-->varchar_255
+   13) account_activation_code-->varchar_255
+   14) user_type_id-->varchar_255
+   15) is_active-->(online/offline)-->varchar_255
+   16) account_status-->(active,delete,pending)-->varchar_255
+   17) display_position-->int_10
+   18) created_at-->varchar_255
+   19) updated_at-->varchar_255
+   20) delated_at-->varchar_255
+
+2) user_metas
+  1) id
+  2) user_id
+  3) group_name
+  4) key
+  5) value
+  6) display_order
+  7) created_at
+  8) updated_at
+  9) delated_at
+
+3) relation_tables
+  1) id
+  2) mail_table_name
+  3) main_table_id
+  4) relation_table_name
+  5) relation_table_id
+  6) use_for
+  7) group_name
+  8) user_id
+  9) display_order
+  10) created_at
+  11) update_at
+  12) delated_at
+
+4) options
+    1) id
+    2) use_for
+    3) group_name
+    4) key
+    5) value
+    6) display_order
+    7) user_id
+    8) created_at
+    9) updated_at
+    10) delated_at

@@ -1,0 +1,60 @@
+1)table:users
+   1) id-->primary
+   2) first_name-->varchar:255
+   3) last_name-->varchar:255
+   4) nick_name-->varchar:255
+   5) email-->varchar:255
+   6) password-->varchar:255
+   7) phone-->varchar:255
+   8) img-->varchar:255
+   9) address-->text
+   10) dob-->varchar:255
+   11) gender-->varchar:255
+   12) email_verified-->varchar:255
+   13) account_activation_code-->varchar:255
+   14) user_type_id-->varchar:255
+   15) is_active-->(online/offline)-->varchar:255
+   16) account_status-->(active,delete,pending)-->varchar:255
+   17) display_position-->int:10
+   18) created_at-->varchar:255
+   19) updated_at-->varchar:255
+   20) delated_at-->varchar:255
+
+2) table:user_metas
+  1) id-->primary
+  2) user_id-->int:10
+  3) group_name-->varchar:255
+  4) data_key-->text:0
+  5) data_value-->text
+  6) display_order-->int:10
+  7) created_at-->timestamp
+  8) updated_at-->timestamp
+  9) delated_at-->timestamp
+
+3) table:relation_tables
+  1) id -->primary
+  2) main_table_name-->varchar:255
+  3) main_table_id-->varchar:255
+  4) relation_table_name-->varchar:255
+  5) relation_table_id-->varchar:255
+  6) use_for-->varchar:255
+  7) group_name-->varchar:255
+  8) user_id-->varchar:255
+  9) display_order-->varchar:255
+  10) created_at-->timestamp
+  11) update_at-->timestamp
+  12) delated_at-->timestamp
+
+4) table:options
+    1) id-->primary
+    2) use_for-->varchar:255
+    3) group_name-->varchar:255
+    4) data_key-->varchar:255
+    5) data_value-->text
+    6) display_order-->varchar:255
+    7) user_id-->varchar:255
+    8) created_at-->timestamp
+    9) updated_at-->timestamp
+    10) delated_at-->timestamp
+
+5)table:end_tinyint
