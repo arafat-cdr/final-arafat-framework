@@ -6,6 +6,8 @@ define('DB_NAME', 'abdul_alim_problem');
 define('DB_USER','root');
 define('DB_PASS','123456');
 
+# Default Site Title ...
+define("SITE_TITLE","website");
 
 # encryption keys
 define("ENCRYPTION_METHOD", "AES-256-CBC");

@@ -44,7 +44,10 @@ Route::get("/call/my-page/", "TestController@index", "testRouteName5");
 
 Route::get("/admin", "AdminController@index", "admin");
 
+Route::page("/page", function(){
 
+    view("front/use-example.php");
+}, 'page');
 
 # For Not Found Url
 Route::notFound(function(){
